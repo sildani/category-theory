@@ -5,7 +5,9 @@
  * @author dsilva, @date 7/8/17 9:59 PM
  */
 class Library {
-    boolean someLibraryMethod() {
-        true
-    }
+
+  boolean someLibraryMethod() {
+    true
+  }
+
 }
