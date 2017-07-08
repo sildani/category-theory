@@ -23,7 +23,7 @@ class ExercisesTest {
     [1,2,"hello"].each {
       def f = { x -> x + 1 }
       def g = { x -> x + 2 }
-      assert Exercises.compose(f,g).call(it) == g(f(it))
+      assert g(f(it)) == Exercises.compose(f,g).call(it)
     }
   }
 
