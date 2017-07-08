@@ -10,7 +10,7 @@ import org.junit.Test
 class LibraryTest {
 
   @Test
-  public void someLibraryMethodShouldReturnTrue() {
+  void someLibraryMethodShouldReturnTrue() {
     assert true == new Library().someLibraryMethod()
   }
 
