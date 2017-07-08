@@ -15,4 +15,17 @@ class ExercisesTest {
     }
   }
 
+  // Implement the composition function in your favorite language. It takes
+  // two functions as arguments and returns a function that is their
+  // composition.
+  @Test
+  void composeFunctionsTest() {
+    [1,2,"hello"].each {
+      def f = { x -> x + 1 }
+      def g = { x -> x + 2 }
+      def composite = g << f
+      assert composite.call(it) == g(f(it))
+    }
+  }
+
 }
