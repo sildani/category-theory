@@ -27,4 +27,12 @@ class ExercisesTest {
     }
   }
 
+  // Write a program that tries to test that your composition function
+  // respects identity.
+  @Test
+  void composedFunctionRespectsIdentity() {
+    def c = Exercises.compose({ x -> x + 1 }, { x -> x + 2 })
+    assert c == Exercises.identity(c)
+  }
+
 }
